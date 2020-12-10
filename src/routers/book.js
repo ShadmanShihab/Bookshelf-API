@@ -22,7 +22,7 @@ router.post('/books', auth, async (req, res) => {
 
 
 //Updating Book Info
-router.patch('/book/:id', auth, async (req, res) => {
+router.patch('/books/:id', auth, async (req, res) => {
     const updates = Object.keys(req.body)
     const allowedUpdates = ['name', 'publishedYear']
     const isValidOperation = updates.every((update) => allowedUpdates.includes(update))
