@@ -15,8 +15,5 @@ app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
 
-const Book = require('./models/book')
-const User = require('./models/user')
-
 
 
